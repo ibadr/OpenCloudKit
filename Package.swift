@@ -16,7 +16,7 @@ let package = Package(
         ],
     targets: [
     .target(name: "OpenCloudKit",
-            dependencies: ["Jay","CLibreSSL","CryptoSwift"]),
+            dependencies: ["Jay","CLibreSSL","CryptoSwift"],
            path: "Sources",
             exclude: [
                 "Tests"
