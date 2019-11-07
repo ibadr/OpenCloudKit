@@ -5,7 +5,7 @@ let package = Package(
     name: "OpenCloudKit",
     dependencies: [
         .package(url: "https://github.com/vapor/clibressl.git", from: "1.0.0"),
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "0.0.0"),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.0.0"),
         .package(url: "https://github.com/ibadr/Jay.git", .branch("master"))
         ]
 )
