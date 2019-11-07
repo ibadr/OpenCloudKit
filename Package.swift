@@ -9,18 +9,18 @@ let package = Package(
       targets: ["OpenCloudKit"]
     )
   ],
+    dependencies: [
+        .package(url: "https://github.com/vapor/clibressl.git", from: "1.0.0"),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.0.0"),
+        .package(url: "https://github.com/ibadr/Jay.git", .branch("master"))
+        ],
     targets: [
     .target(name: "OpenCloudKit",
            path: "Sources",
             exclude: [
                 "Tests"
             ])
-  ],
-  dependencies: [
-        .package(url: "https://github.com/vapor/clibressl.git", from: "1.0.0"),
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.0.0"),
-        .package(url: "https://github.com/ibadr/Jay.git", .branch("master"))
-        ]
+  ]
 )
 
 #if os(Linux)
