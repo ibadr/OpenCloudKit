@@ -6,7 +6,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/vapor/clibressl.git", majorVersion: 1),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", majorVersion: 0),
-        .package(url: "https://github.com/ibadr/Jay.git", .branch("master"))
+        .package(url: "https://github.com/ibadr/Jay.git", branch: "master")
         ]
 )
 
